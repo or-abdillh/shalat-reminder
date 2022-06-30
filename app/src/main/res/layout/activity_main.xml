@@ -23,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="298dp"
             android:layout_marginTop="80dp"
-            app:srcCompat="@drawable/caligraph" />
+            app:srcCompat="@drawable/caligraph"
+            android:contentDescription="TODO" />
 
     </LinearLayout>
 
@@ -31,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="55dp"
+        android:onClick="navigateToLIsts"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="36dp">
 
@@ -68,6 +70,10 @@
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:onClick="navigateToLIsts"
                 app:srcCompat="@drawable/down_arrow_foreground" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
