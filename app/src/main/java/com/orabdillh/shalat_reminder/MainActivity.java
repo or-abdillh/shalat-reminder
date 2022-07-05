@@ -42,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
         haditsArea.setText(hadits[random]);
 
+        // Play adzan
+        MediaPlayer player = MediaPlayer.create(this, R.raw.adzan);
+        player.start();
+        player.setLooping(true);
+
         // Toast
         Toast.makeText(this, "20302022 - Oka R. Abdillah", Toast.LENGTH_SHORT).show();
 
@@ -60,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this, ListActivity.class
                 );
-                //playAudio();
+                player.stop();
                 startActivity(intent);
             }
         });
