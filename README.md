@@ -1,5 +1,5 @@
 <strong align="center">Shalat Reminder - Native Android Application</strong>
-<img src="https://drive.google.com/uc?id=1bRH-FyPJboaIKhCyvSpGTsuboA25upFK&export=download" width="100%" />
+<img src="./overview.PNG" width="100%" />
 
 ### About
 Shalat Reminder - adalah sebuah aplikasi yang dibangun untuk memenuhi project UAS pada mata kuliah <strong>Pemrograman Mobile Teori 2022</strong>
