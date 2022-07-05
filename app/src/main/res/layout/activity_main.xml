@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/asharOptionImage"
             android:layout_width="match_parent"
             android:layout_height="298dp"
             android:layout_marginTop="80dp"
@@ -32,7 +32,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="55dp"
-        android:onClick="navigateToLIsts"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="36dp">
 
@@ -56,7 +55,7 @@
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/haditsArea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp"
@@ -67,13 +66,12 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/buttonNext"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:clickable="true"
                 android:contentDescription="@string/app_name"
                 android:focusable="true"
-                android:onClick="navigateToLIsts"
                 app:srcCompat="@drawable/down_arrow_foreground" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
