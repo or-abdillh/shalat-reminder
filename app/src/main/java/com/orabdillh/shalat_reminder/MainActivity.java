@@ -2,7 +2,9 @@ package com.orabdillh.shalat_reminder;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.Random;
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         String[] hadits = {
                 "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam(menjalankan) agama yang lurus, dan supaya mereka mendirikan shalat dan meunaikan zakat; dan yang demikian itulah agama yang lurus.",
                 "Peliharalah segala shalat(mu), dan (peliharalah) shalat wusthaa. Berdirilah untuk Allah (dalam shalatmu) dengan khusyu.",
-                "Jabir bin Abdullah berkata, \"Saya mendengar Rasulullah shallallahu alaihi wasallam bersabda: \"Yang memisahkan antara seorang laki-laki dengan kesyirikan dan kekufuran adalah meninggalkan shalat."
+                "Jabir bin Abdullah berkata, Saya mendengar Rasulullah shallallahu alaihi wasallam bersabda: \"Yang memisahkan antara seorang laki-laki dengan kesyirikan dan kekufuran adalah meninggalkan shalat."
         };
 
         haditsArea = (TextView) findViewById(R.id.haditsArea);
@@ -39,18 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         haditsArea.setText(hadits[random]);
 
-        // Play Adzan
-        String path = "https://islamdownload.net/r/123801/Adzan-Shubuh-Abu-Hazim.mp3";
-        MediaPlayer media = new MediaPlayer();
-        try {
-            media.reset();
-            media.setDataSource(path);
-            media.prepare();
-            media.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        media.start();
+        // Toast
+        Toast.makeText(this, "20302022 - Oka R. Abdillah", Toast.LENGTH_SHORT).show();
 
         // Button Next animation
         Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
@@ -67,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this, ListActivity.class
                 );
+                //playAudio();
                 startActivity(intent);
             }
         });
