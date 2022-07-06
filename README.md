@@ -1,6 +1,7 @@
-<p align="center">Shalat Reminder</strong>
-<p align="center">Native Android Application</p>
-<br>
+<p align="center">Shalat Reminder Native Android Application</p>
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/or-abdillh/shalat-reminder?style=for-the-badge)
+
 <img src="./overview.PNG" width="100%" style="margin-top: 25px" />
 
 ### About
