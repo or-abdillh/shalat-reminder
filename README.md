@@ -1,6 +1,9 @@
-<p align="center">Shalat Reminder Native Android Application</p>
+<p align="center"><strong>Shalat Reminder Native Android Application</strong></p>
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/or-abdillh/shalat-reminder?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/or-abdillh/shalat-reminder?style=for-the-badge)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/or-abdillh/shalat-reminder?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/or-abdillh/shalat-reminder?style=for-the-badge)
 
 <img src="./overview.PNG" width="100%" style="margin-top: 25px" />
 
